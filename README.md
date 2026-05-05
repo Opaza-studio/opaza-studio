@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:3D2517,50:B8714C,100:DCC9A8&height=220&section=header&text=Hi%20%F0%9F%91%8B%20I'm%20Ethan&fontSize=55&fontColor=EDE3D2&animation=fadeIn&fontAlignY=38&desc=Full%20Stack%20Developer%20%E2%80%A2%20Freelance%20%26%20Agence&descAlignY=58&descSize=18&descColor=EDE3D2" alt="header"/>
+  <img src="./opaza-github-banner@2x.png" alt="header"/>
 </p>
 
 
