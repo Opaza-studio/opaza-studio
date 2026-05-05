@@ -66,8 +66,8 @@ contact:     ethan.huot.dev@gmail.com
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="github-readme-stats-nine-iota-16.vercel.app/api?username=dardaelliande&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=EDE3D2&title_color=B8714C&icon_color=B8714C&text_color=3D2517&ring_color=B8714C" alt="stats"/>
-  <img height="180em" src="github-readme-stats-nine-iota-16.vercel.app/api/top-langs/?username=dardaelliande&layout=compact&hide_border=true&bg_color=EDE3D2&title_color=B8714C&text_color=3D2517&langs_count=8" alt="languages"/>
+  <img height="180em" src="https://github-readme-stats-nine-iota-16.vercel.app/api?username=dardaelliande&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=EDE3D2&title_color=B8714C&icon_color=B8714C&text_color=3D2517&ring_color=B8714C" alt="stats"/>
+  <img height="180em" src="https://github-readme-stats-nine-iota-16.vercel.app/api/top-langs/?username=dardaelliande&layout=compact&hide_border=true&bg_color=EDE3D2&title_color=B8714C&text_color=3D2517&langs_count=8" alt="languages"/>
 </p>
 
 <p align="center">
