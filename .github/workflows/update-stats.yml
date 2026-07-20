@@ -18,31 +18,25 @@ jobs:
       - name: Créer le dossier assets
         run: mkdir -p assets
 
-      - name: Télécharger la carte Stats
+      - name: Télécharger les cartes (avec retries)
         run: |
-          curl -sf "https://github-readme-stats.vercel.app/api?username=dardaelliande&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=EDE3D2&title_color=B8714C&icon_color=B8714C&text_color=3D2517&ring_color=B8714C" \
-            -o assets/stats_new.svg || echo "stats: échec du téléchargement"
+          declare -A urls=(
+            [stats]="https://github-readme-stats.vercel.app/api?username=dardaelliande&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=EDE3D2&title_color=B8714C&icon_color=B8714C&text_color=3D2517&ring_color=B8714C"
+            [languages]="https://github-readme-stats.vercel.app/api/top-langs/?username=dardaelliande&layout=compact&hide_border=true&bg_color=EDE3D2&title_color=B8714C&text_color=3D2517&langs_count=8"
+            [streak]="https://streak-stats.demolab.com?user=dardaelliande&hide_border=true&background=EDE3D2&stroke=DCC9A8&ring=B8714C&fire=B8714C&currStreakLabel=B8714C&currStreakNum=3D2517&sideLabels=3D2517&sideNums=3D2517&dates=3D2517"
+          )
 
-      - name: Télécharger la carte Languages
-        run: |
-          curl -sf "https://github-readme-stats.vercel.app/api/top-langs/?username=dardaelliande&layout=compact&hide_border=true&bg_color=EDE3D2&title_color=B8714C&text_color=3D2517&langs_count=8" \
-            -o assets/languages_new.svg || echo "languages: échec du téléchargement"
-
-      - name: Télécharger la carte Streak
-        run: |
-          curl -sf "https://streak-stats.demolab.com?user=dardaelliande&hide_border=true&background=EDE3D2&stroke=DCC9A8&ring=B8714C&fire=B8714C&currStreakLabel=B8714C&currStreakNum=3D2517&sideLabels=3D2517&sideNums=3D2517&dates=3D2517" \
-            -o assets/streak_new.svg || echo "streak: échec du téléchargement"
-
-      - name: Ne remplacer que si le contenu téléchargé est valide
-        run: |
-          for name in stats languages streak; do
+          for name in "${!urls[@]}"; do
             new="assets/${name}_new.svg"
             final="assets/${name}.svg"
-            if [ -s "$new" ] && ! grep -qi "something went wrong\|error\|rate limit" "$new"; then
+
+            curl -sf --retry 4 --retry-delay 8 --retry-all-errors "${urls[$name]}" -o "$new" || true
+
+            if [ -s "$new" ] && ! grep -qiE "something went wrong|rate limit|<html" "$new"; then
               mv "$new" "$final"
               echo "$name : mis à jour"
             else
-              echo "$name : échec ou contenu invalide -> ancienne version conservée"
+              echo "$name : échec du téléchargement -> ancienne version conservée (si elle existe)"
               rm -f "$new"
             fi
           done
@@ -51,6 +45,11 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add assets/*.svg
-          git diff --staged --quiet || git commit -m "chore: update GitHub stats cards"
-          git push
+
+          if [ -n "$(git status --porcelain -- assets/)" ]; then
+            git add assets/
+            git commit -m "chore: update GitHub stats cards"
+            git push
+          else
+            echo "Aucun changement à commit."
+          fi
