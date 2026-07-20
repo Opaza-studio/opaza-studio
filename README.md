@@ -2,18 +2,16 @@
   <img src="./opaza-github-banner@2x.png" alt="header"/>
 </p>
 
-
 <p align="center">
-  <a href="https://opaza-studio.vercel.app/fr">
+  <a href="https://opaza.fr">
     <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=2800&pause=900&color=B8714C&center=true&vCenter=true&width=620&lines=React+Native+%E2%80%A2+Laravel+%E2%80%A2+Next.js;Web+%26+mobile+apps+for+sports+events;Freelance+%40+Opaza+Studio;Always+shipping+full+products+solo" alt="typing"/>
   </a>
 </p>
 
-
 <p align="center">
   <a href="mailto:ethan.huot.dev@gmail.com"><img src="https://img.shields.io/badge/-Email-B8714C?style=for-the-badge&logo=gmail&logoColor=EDE3D2&labelColor=B8714C" alt="email"/></a>
   <a href="https://linkedin.com/in/ethan-huot-opaza-studio"><img src="https://img.shields.io/badge/-LinkedIn-3D2517?style=for-the-badge&logo=linkedin&logoColor=EDE3D2&labelColor=3D2517" alt="linkedin"/></a>
-  <a href="https://opaza-studio.vercel.app/fr"><img src="https://img.shields.io/badge/-Portfolio-DCC9A8?style=for-the-badge&logo=vercel&logoColor=3D2517&labelColor=DCC9A8" alt="portfolio"/></a>
+  <a href="https://opaza.fr"><img src="https://img.shields.io/badge/-Portfolio-DCC9A8?style=for-the-badge&logo=vercel&logoColor=3D2517&labelColor=DCC9A8" alt="portfolio"/></a>
   <img src="https://komarev.com/ghpvc/?username=dardaelliande&label=Profile+views&color=B8714C&style=for-the-badge&labelColor=3D2517" alt="views"/>
 </p>
 
@@ -66,8 +64,8 @@ contact:     ethan.huot.dev@gmail.com
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats-nine-iota-16.vercel.app/api?username=dardaelliande&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=EDE3D2&title_color=B8714C&icon_color=B8714C&text_color=3D2517&ring_color=B8714C" alt="stats"/>
-  <img height="180em" src="https://github-readme-stats-nine-iota-16.vercel.app/api/top-langs/?username=dardaelliande&layout=compact&hide_border=true&bg_color=EDE3D2&title_color=B8714C&text_color=3D2517&langs_count=8" alt="languages"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dardaelliande&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=EDE3D2&title_color=B8714C&icon_color=B8714C&text_color=3D2517&ring_color=B8714C" alt="stats"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dardaelliande&layout=compact&hide_border=true&bg_color=EDE3D2&title_color=B8714C&text_color=3D2517&langs_count=8" alt="languages"/>
 </p>
 
 <p align="center">
