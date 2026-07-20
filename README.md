@@ -61,19 +61,6 @@ contact:     ethan.huot.dev@gmail.com
 
 ---
 
-### 📊 GitHub Stats
-
-<p align="center">
-  <img height="180em" src="./assets/stats.svg" alt="stats"/>
-  <img height="180em" src="./assets/languages.svg" alt="languages"/>
-</p>
-
-<p align="center">
-  <img src="./assets/streak.svg" alt="streak"/>
-</p>
-
----
-
 <!-- Footer : dégradé inversé -->
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=waving&color=0:DCC9A8,50:B8714C,100:3D2517&height=120&section=footer" alt="footer"/>
