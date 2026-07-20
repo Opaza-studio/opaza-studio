@@ -64,12 +64,12 @@ contact:     ethan.huot.dev@gmail.com
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=dardaelliande&show_icons=true&include_all_commits=true&count_private=true&hide_border=true&bg_color=EDE3D2&title_color=B8714C&icon_color=B8714C&text_color=3D2517&ring_color=B8714C" alt="stats"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=dardaelliande&layout=compact&hide_border=true&bg_color=EDE3D2&title_color=B8714C&text_color=3D2517&langs_count=8" alt="languages"/>
+  <img height="180em" src="./assets/stats.svg" alt="stats"/>
+  <img height="180em" src="./assets/languages.svg" alt="languages"/>
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=dardaelliande&hide_border=true&background=EDE3D2&stroke=DCC9A8&ring=B8714C&fire=B8714C&currStreakLabel=B8714C&currStreakNum=3D2517&sideLabels=3D2517&sideNums=3D2517&dates=3D2517" alt="streak"/>
+  <img src="./assets/streak.svg" alt="streak"/>
 </p>
 
 ---
